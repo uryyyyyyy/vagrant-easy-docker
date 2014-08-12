@@ -42,3 +42,12 @@ portを開けておいて、hogeを実行する。
 ゲストOS（vagrantで立ち上げたcoreOS） 8080を80で受ける
 
 dockerコンテナ（今回はcentOS） 80で受けてhttpレスポンスを返す。
+
+
+## コンテナ起動中に他の処理をする
+
+docker run に -d オプションを付ける。
+
+docker logs {container ID}
+
+docker stop {container ID}

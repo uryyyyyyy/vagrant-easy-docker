@@ -1,10 +1,15 @@
 
 ## build
 
+docker build -t="paintedfox/mariadb" share/mariadb/ 
+
 ## run
-docker run -d -p 3306:3306 -v /home/core/tmp:/data -e USER="prm" -e PASS="prm" paintedfox/mariadb
+docker run -d -p 3306:3306 -v /home/core/mariadb:/data -e USER="sample" -e PASS="sample" paintedfox/mariadb
 
 
-## log
+## 使い方
 
-docker logs {container ID}
+coreOSのホームディレクトリにmariadbフォルダを作成し、データをそこに入れる
+
+（shareの中身を設定して、ホストOSでdataを管理したかったけど権限周りがダメみたい。
+たしかMariaDBの処理はユーザーが違ったような。）
