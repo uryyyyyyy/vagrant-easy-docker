@@ -1,7 +1,7 @@
 
 ## build
 
-docker build -t hoge share/centos-httpd/
+docker build -t centos/httpd share/centos-httpd/
 
 ## run
 
