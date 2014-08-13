@@ -4,8 +4,8 @@
 docker build -t="paintedfox/mariadb" share/mariadb/ 
 
 ## run
-docker run -d -p 3306:3306 -v /home/core/mariadb:/data -e USER="sample" -e PASS="sample" paintedfox/mariadb
 
+docker run -d -p 3306:3306 -v /home/core/mariadb:/data -e USER="sample" -e PASS="sample" paintedfox/mariadb
 
 ## 使い方
 
