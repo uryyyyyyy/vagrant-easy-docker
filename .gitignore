@@ -2,4 +2,4 @@
 log/
 user-data
 config.rb
-dump/*.sql
+*.sql
