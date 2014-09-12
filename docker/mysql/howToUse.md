@@ -5,7 +5,7 @@ docker build -t tutum/mysql share/mysql/
 
 ## run
 
-docker run -d  -p 3306:3306 -e MYSQL_PASS="sample" -e MYSQL_USER="sample" tutum/mysql
+docker run -d -p 3306:3306 -e MYSQL_PASS="sample" -e MYSQL_USER="sample" tutum/mysql
 
 ## 使い方
 
