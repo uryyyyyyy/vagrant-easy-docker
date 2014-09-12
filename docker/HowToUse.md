@@ -71,6 +71,8 @@ dockerコンテナ（centos/httpdをrunしたもの）が80で受けてhttpレ�
 
 docker run に -d オプションを付ける。
 
+docker ps
+
 docker logs {container ID}
 
 docker stop {container ID}
